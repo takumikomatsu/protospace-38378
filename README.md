@@ -10,8 +10,8 @@
 
 ## Association
 
-has_many :user
-has_many :prototypes
+belongs_to :user
+belongs_to :prototype
 
 ## prototypes テーブル
 
@@ -24,8 +24,8 @@ has_many :prototypes
 
 ## Association
 
-has_many :user
-belongs_to :comments
+has_many :comments
+belongs_to :user
 
 ## users テーブル
 
@@ -40,5 +40,5 @@ belongs_to :comments
 
 ## Association
 
-belongs_to :comments
-belongs_to :prototypes
+has_many :comments
+has_many :prototypes
